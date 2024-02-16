@@ -20,3 +20,7 @@ Automagically export data from [Baserow](https://baserow.io/)
 ```
 * change into the new created repo, by default `baserow-entities`
 * follow the instructions of the README.me located in `baserow-entities/README.md`
+
+## IMPORTANT
+
+if you run the export via GH-Actions (which you should) make sure you granted GH-ACTIONS write permissions, e.g. herer https://github.com/organizations{yourorganisation}/settings/actions
