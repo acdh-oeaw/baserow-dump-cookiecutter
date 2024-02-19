@@ -22,6 +22,7 @@ Automagically export data from [Baserow](https://baserow.io/)
 * Create GitHub secrets called `BASEROW_USER`,  `BASEROW_PW` and `BASEROW_TOKEN` add your Baserow credentials
 * Go to the settings of the repository and grant GitHub Actions write permissions for your repo
 * Go to GitHub Actions and start the workflow -> the exported data will be checked into your repo
+* Be Aware, TEI/XML dumps are not created by the GitHub Action. You'll need to adapt the workflow yourself.
 
 -----
 created with [basrow-dump-cookiecutter](https://github.com/acdh-oeaw/transkribus-export-cookiecutter)
