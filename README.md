@@ -4,7 +4,8 @@
 
 ## what is this for
 
-Automagically export data from [Baserow](https://baserow.io/) 
+* Automagically export data from [Baserow](https://baserow.io/) 
+* if wanted, converts JSON dumps of your Baserow Database into semantically enriched TEI/XML documents
 
 
 ## Quickstart

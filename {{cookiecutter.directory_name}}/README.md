@@ -10,12 +10,17 @@ Automagically export data from [Baserow](https://baserow.io/)
 
 ## export the data
 
-run `./export_env_variables.sh` to set your Baserow credentials as environment variables.
+* run `./export_env_variables.sh` to set your Baserow credentials as environment variables.
 * run `python dump_data.py`
+
+## convert dumps to TEI/XML
+* adapt the TEI-Header in `tei-template.xml` to your needs
+* run `python make_tei.py`
 
 ## GitHub-Actions
 
 * Create GitHub secrets called `BASEROW_USER`,  `BASEROW_PW` and `BASEROW_TOKEN` add your Baserow credentials
+* Go to the settings of the repository and grant GitHub Actions write permissions for your repo
 * Go to GitHub Actions and start the workflow -> the exported data will be checked into your repo
 
 -----

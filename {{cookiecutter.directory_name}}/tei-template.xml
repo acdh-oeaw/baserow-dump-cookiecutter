@@ -1,0 +1,31 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+       <fileDesc>
+          <titleStmt>
+             <title type="main">name of the current file - will be derived from the baserow-table-name</title>
+             <title type="sub">{{ cookiecutter.project_name }}</title>
+          </titleStmt>
+          <publicationStmt>
+             <publisher>
+                <persName key="some orcid">Firstname Lastname</persName>
+             </publisher>
+             <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY</licence>
+             </availability>
+          </publicationStmt>
+          <sourceDesc>
+            <p>Baserow table <name xml:id="table_name"></name> with ID <idno>idno</idno> serialized as TEI/XML with <name>make_tei.py</name></p>
+         </sourceDesc>
+       </fileDesc>
+       <profileDesc>
+         <creation>
+            <date/>
+         </creation>
+      </profileDesc>
+    </teiHeader>
+    <text>
+       <body>
+       </body>
+    </text>
+ </TEI>
+ 
