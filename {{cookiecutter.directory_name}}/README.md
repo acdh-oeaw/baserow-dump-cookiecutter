@@ -4,13 +4,13 @@ Automagically export data from [Baserow](https://baserow.io/)
 
 ## initial (local) set up
 
-* create a virtual environment `python -m venv venv`
+* create a virtual environment `python -m venv venv` and activate it `source venv/bin/activate`
 * update pip to latest version and install needed python packages `pip install -U pip && pip install -r requirements.txt`
 * copy/rename `dummy.env` to `secret.env` and add your Baserow credentials
 
 ## export the data
 
-* run `./export_env_variables.sh` to set your Baserow credentials as environment variables.
+* run `source ./export_env_variables.sh` to set your Baserow credentials as environment variables.
 * run `python dump_data.py`
 
 ## convert dumps to TEI/XML
