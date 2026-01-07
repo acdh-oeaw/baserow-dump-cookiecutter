@@ -1,2 +1,0 @@
-acdh-baserow-pyutils>=0.8,<1
-acdh-tei-pyutils
