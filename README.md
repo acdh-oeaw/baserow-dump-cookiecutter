@@ -9,12 +9,17 @@
 
 
 ## Quickstart
-* Install the latest Cookiecutter if you haven't installed it yet (this requires Cookiecutter 1.7.0 or higher) by running `pip install -U cookiecutter`
 
 > [!TIP]  
-> Install `cookiecutter` inside a [virtual environment](https://docs.python.org/3/library/venv.html). To create a virtuale environment run `python -m venv venv` and activate it by running `source venv/bin/activate`
+> Use this cookiecutter with the Python package manager [uv](https://docs.astral.sh/uv/).
 
-* To generate a new to export data from [Baserow](https://baserow.io/) project run `cookiecutter gh:acdh-oeaw/baserow-dump-cookiecutter` and answer the following questions, see below:
+To generate a new to export data from [Baserow](https://baserow.io/) project run
+
+ ```shell
+ uvx cookiecutter gh:acdh-oeaw/baserow-dump-cookiecutter
+ ```
+ 
+and answer the following questions, see below:
 
 ```json
 {

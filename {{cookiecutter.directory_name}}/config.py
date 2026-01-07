@@ -15,5 +15,7 @@ try:
     br_client = BaseRowClient(
         BASEROW_USER, BASEROW_PW, BASEROW_TOKEN, br_base_url=BASEROW_URL
     )
+    print("connection successfully established")
 except KeyError:
     br_client = None
+    print("no baserow connection established, check credentials")
