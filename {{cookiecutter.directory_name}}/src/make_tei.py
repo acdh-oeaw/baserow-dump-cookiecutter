@@ -16,14 +16,14 @@ from config import JSON_FOLDER, TEI_FOLDER, br_client, BASEROW_DB_ID
 files = sorted(glob.glob(f"{JSON_FOLDER}/*.json"))
 shutil.rmtree(TEI_FOLDER, ignore_errors=True)
 os.makedirs(TEI_FOLDER, exist_ok=True)
-
+template_file = os.path.join("src", "tei-template.xml")
 
 db_dict = br_client.fetch_table_field_dict(BASEROW_DB_ID)
 current_day = str(date.today())
 
 
 for x in tqdm(files, total=len(files)):
-    doc = TeiReader("tei-template.xml")
+    doc = TeiReader(template_file)
     _, tail = os.path.split(x)
     tei_file_name = tail.replace(".json", ".xml")
     table_name = tail.replace(".json", "")
