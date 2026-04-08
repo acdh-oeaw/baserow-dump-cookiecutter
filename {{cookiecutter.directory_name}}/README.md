@@ -10,11 +10,11 @@ Automagically export data from [Baserow](https://baserow.io/)
 ## export the data
 
 * run `source ./export_env_variables.sh` to set your Baserow credentials as environment variables.
-* run `uv dump_data.py`
+* run `uv run src/dump_data.py`
 
 ## convert dumps to TEI/XML
 * adapt the TEI-Header in `tei-template.xml` to your needs
-* run `uv make_tei.py`
+* run `uv run src/make_tei.py`
 
 ## GitHub-Actions
 
